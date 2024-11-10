@@ -43,7 +43,7 @@ void setup() {
 } // end of setup
 
 void loop() {
- roboEyes.update(); // update eyes drawings
+ roboEyes.drawEyes(); // update eyes drawings
 
    // LOOPED ANIMATION SEQUENCE
   // Do once after defined number of milliseconds
@@ -69,9 +69,10 @@ void loop() {
   if(millis() >= eventTimer + 25000){
     roboEyes.setCuriosity(OFF);
     roboEyes.setIdleMode(OFF);
+    roboEyes.setMood(DEFAULT);
     roboEyes.setPosition(DEFAULT);
     roboEyes.close(); // close eyes again
-    roboEyes.setMood(DEFAULT);
+
     // Reset the timer and the event flags to restart the whole "complex animation loop"
     eventTimer = millis(); // reset timer
     event1wasPlayed = 0; // reset flags
