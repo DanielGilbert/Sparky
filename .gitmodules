@@ -1,0 +1,3 @@
+[submodule "sparky/RoboEyes"]
+	path = sparky/RoboEyes
+	url = https://github.com/FluxGarage/RoboEyes.git
