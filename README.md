@@ -1,2 +1,2 @@
 # Sparky
-Sparky is a tiny little desktop companion
+Sparky is your friendly desk companion.
